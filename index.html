@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+<div>
+    <div class="form-group">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <table class="table table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>Link sản phẩm(*)</th>
+                    <th>Ảnh sản phẩm</th>
+                    <th>Tên shop</th>
+                    <th>Mô tả</th>
+                    <th>Loại hàng</th>
+                    <th>Số lượng(*)</th>
+                    <th>Giá(*)</th>
+                    <th>Thao tác</th>
+                </tr>
+                </thead>
+                <tbody id="list_order">
+                <tr id="order_0">
+                    <td><input type="text" class="form-control btn-flat" name="order[0][link_sp]" id="link_sp"
+                               placeholder="Nhập link sản phẩm" autofocus="autofocus" required=""></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[0][anh_sanpham]" id="anh_sanpham"
+                               placeholder="Nhập link ảnh nếu có"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[0][ten_shop]" id="ten_shop"
+                               placeholder="Tên shop"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[0][mo_ta]" id="mo_ta"
+                               placeholder="Mô tả"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[0][ghi_chu]" id="ghi_chu"
+                               placeholder="Loại hàng"></td>
+                    <td><input type="number" class="form-control btn-flat" name="order[0][so_luong]" id="so_luong"
+                               placeholder="Số lượng" required=""></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[0][don_gia]" id="don_gia"
+                               placeholder="Nhập giá" required=""></td>
+                    <td></td>
+                </tr>
+                <tr id="order_1">
+                    <td><input type="text" class="form-control btn-flat" name="order[1][link_sp]" id="link_sp"
+                               placeholder="Nhập link sản phẩm" autofocus="autofocus" required=""></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[1][anh_sanpham]" id="anh_sanpham"
+                               placeholder="Nhập link ảnh nếu có"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[1][ten_shop]" id="ten_shop"
+                               placeholder="Tên shop"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[1][mo_ta]" id="mo_ta"
+                               placeholder="Mô tả"></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[1][ghi_chu]" id="ghi_chu"
+                               placeholder="Loại hàng"></td>
+                    <td><input type="number" class="form-control btn-flat" name="order[1][so_luong]" id="so_luong"
+                               placeholder="Số lượng" required=""></td>
+                    <td><input type="text" class="form-control btn-flat" name="order[1][don_gia]" id="don_gia"
+                               placeholder="Nhập giá" required=""></td>
+                    <td></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="100%">
+                        <input type="checkbox" required="" id="check_dieukien"> Tôi đã xem và đồng ý với <a
+                            href="javascript:void(0);" style="color:red;font-weight:bold;" onclick="Quangcao();">QUY
+                        ĐỊNH ĐỐI VỚI CÁC ĐƠN HÀNG ORDER</a> (*)
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+
+            <button class="btn btn-primary btn-flat" type="button" onclick="checkAdd();">
+                <i class="fa fa-plus"></i> Thêm sản phẩm
+            </button>
+            <button type="submit" class="btn btn-default pull-right btn-flat">
+                <i class="fa fa-shopping-cart"></i> Gửi đơn hàng
+            </button>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
